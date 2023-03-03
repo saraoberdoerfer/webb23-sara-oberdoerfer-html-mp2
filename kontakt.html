@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--skrev in meta taggar-->
+        <meta name="description" content="Resturang La Trattorias boka bord" />
+        <meta name="keywords" content="italienskt, pizza, pasta, resturang, Malmö" />
+        <title>Boka Bord</title>
+        <!--länkade en bild-->
+        <link rel="icon" type="image/x-icon" href="bildmapp/icon.jpeg" />
+        <link rel="stylesheet" href="stilmapp/style.css" />
+    </head>
+    <body>
+        <header>
+            <h1 id="rubrik">La Trattoria</h1>
+        </header>
+
+        <div class="flexbox">
+            <div class="startsida">
+                <nav>
+                    <a href="index.html"> <p>Start</p></a>
+                </nav>
+            </div>
+            <br />
+            <div class="meny">
+                <nav>
+                    <a href="meny.html"> <p>Meny</p></a>
+                </nav>
+            </div>
+        </div>
+        <br /><br />
+
+        <!--gjort en flexbox med formulär i sig-->
+        <div id="flex-container">
+            <form action="/action_page.php">
+                <label for="fname"> Namn:</label>
+                <input type="text" id="fname" name="fname" value=><br />
+                <br />
+                <label for="mejl">Mejladress:</label>
+                <input type="text" id="mejl" name="mejl" value=><br /><br />
+                <label for="datum">Datum (yy/mm/dd):</label>
+                <input type="text" id="datum" name="datum" value=><br />
+                <br />
+                <label for="tid">Tid:</label>
+                <input type="text" id="tid" name="tid" value=><br /><br />
+                <label for="personer">Antal personer:</label>
+                <input type="text" id="personer" name="personer" value=><br /><br />
+                <label for="ovrigt">Övrigt:</label>
+                <input type="text" id="ovrigt" name="ovrigt" value=><br /><br />
+                <input type="submit" value="Skicka" />
+            </form>
+        </div>
+
+        <footer>
+            <div id="kontakter">
+                <h3>La Trattoria</h3>
+                <p>
+                    Östra Tullgatan 7 <br />
+                    211 28 Malmö <br />
+                    <!--nu man kan trycka på telefonnummret för att ringa upp-->
+                    Telefon:
+                    <a href="tel:040-232073">040-232073</a>
+                    <br />
+                    <!--nu man kan trycka på mejlen för att mejl ska komma upp-->
+                    Email:
+                    <a href="mailto:bokning@latrattoria.se"
+                        >bokning@latrattoria.se</a
+                    >
+                </p>
+                <!--länka in e logga som är instagram-->
+                <a
+                    href="https://www.instagram.com/latrattoriamalmo/"
+                    target="_blank"
+                >
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a
+                    href="https://www.facebook.com/latrattoriamalmo"
+                    target="_blank"
+                >
+                    <!--länka in en logga som är facebook-->
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+                <!--När man klickar på dessa loggor kommer man till den sidan-->
+                <script
+                    type="module"
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+                ></script>
+                <script
+                    nomodule
+                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+                ></script>
+            </div>
+        </footer>
+    </body>
+</html>
